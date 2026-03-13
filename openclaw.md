@@ -10,3 +10,5 @@
 
 ### 命令
 - 查看 gateway 状态：openclaw gateway status
+- 启动：openclaw gateway start
+- 关闭：pkill openclaw
