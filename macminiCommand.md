@@ -14,6 +14,7 @@
 
 ## ngix重启
 - sudo nginx -t && sudo nginx -s reload
+- ubuntu:sudo systemctl restart nginx
 
 ## 
 
