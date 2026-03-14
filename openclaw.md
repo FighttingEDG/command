@@ -12,3 +12,6 @@
 - 查看 gateway 状态：openclaw gateway status
 - 启动：openclaw gateway start
 - 关闭：pkill openclaw
+- 自动修复：openclaw doctor --fix(不使用)
+- 启动并显示日志：openclaw gateway run
+- 临时强制启动(忽略警告)：openclaw gateway run --allow-unconfigured
