@@ -15,3 +15,5 @@
 - 自动修复：openclaw doctor --fix(不使用)
 - 启动并显示日志：openclaw gateway run
 - 临时强制启动(忽略警告)：openclaw gateway run --allow-unconfigured
+- 指定新的key：openclaw auth add openrouter:default --api-key "你的新KEY"
+- 设置新的token：openclaw config set gateway.auth.token "Jevon1659782099"
