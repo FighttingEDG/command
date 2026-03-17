@@ -17,3 +17,7 @@
 - 临时强制启动(忽略警告)：openclaw gateway run --allow-unconfigured
 - 指定新的key：openclaw auth add openrouter:default --api-key "你的新KEY"
 - 设置新的token：openclaw config set gateway.auth.token "Jevon1659782099"
+- 查看当前skills：openclaw skills list
+- 使用npx从clawhub下载技能：npx clawhub install video-frames
+- 停掉守护进程：launchctl stop ai.openclaw.gateway
+- 移除自启：launchctl remove ai.openclaw.gateway
