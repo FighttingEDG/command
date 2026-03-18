@@ -65,7 +65,8 @@
 
 ## git
 - 回退到指定版本：git reset --hard f75c6a83
-
+- 放弃之前修改：git reset --hard
+- 切换分支：git checkout v2026.3.13-1
 ## npm清缓存
 - npm cache clean --force
 
