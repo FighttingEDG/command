@@ -15,12 +15,16 @@
     - docker compose up → 根据 docker-compose.yml 启动服务。
     - -d → 后台运行（detached mode），终端不会被占用。
     - openclaw-gateway → 要启动的服务名，可以只启动这个服务，不启动 Compose 文件里的其他服务。
+
+## 常用命令
+- 查看当前镜像：docker images
 - 停止并移除(不建议使用)：docker compose down（改了.env环境变量要先移除再启动）
-- 启动网关：docker compose up -d openclaw-gateway
+- 启动网关：docker compose up -d (--force-recreate) openclaw-gateway;--force-recreate强制删除旧容器并创建一个新容器
 - 停止网关：docker compose stop openclaw-gateway
 - 重启网关：docker compose restart openclaw-gateway
 - 查看前状态：docker ps
-
+- 查看当前docker存储占用情况：docker system df
+- 删除打包产生的缓存：docker builder prune
 
 
 ## 需要修改
@@ -47,3 +51,7 @@
     all_proxy: ${OPENCLAW_ALL_PROXY:-}
     NO_PROXY: ${OPENCLAW_NO_PROXY:-localhost,127.0.0.1}
     no_proxy: ${OPENCLAW_NO_PROXY:-localhost,127.0.0.1}
+
+## 首次会遇到
+- 列出待批准配对的设备：docker compose run --rm openclaw-cli devices list
+- 批准某台设备：docker compose run --rm openclaw-cli devices approve <requestId>
