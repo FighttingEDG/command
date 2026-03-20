@@ -26,6 +26,7 @@
 - 查看当前docker存储占用情况：docker system df
 - 删除打包产生的缓存：docker builder prune
 
+## 接入企业微信
 
 ## 需要修改
 -  docker-compose.yaml
@@ -43,14 +44,11 @@
     OPENCLAW_WORKSPACE_DIR=/Users/yuhongyang/clawWorkspace/workspace
     OPENCLAW_GATEWAY_PORT=18789
     OPENCLAW_BRIDGE_PORT=18790
-    HTTP_PROXY: ${OPENCLAW_HTTP_PROXY:-}
-    HTTPS_PROXY: ${OPENCLAW_HTTPS_PROXY:-}
-    ALL_PROXY: ${OPENCLAW_ALL_PROXY:-}
-    http_proxy: ${OPENCLAW_HTTP_PROXY:-}
-    https_proxy: ${OPENCLAW_HTTPS_PROXY:-}
-    all_proxy: ${OPENCLAW_ALL_PROXY:-}
-    NO_PROXY: ${OPENCLAW_NO_PROXY:-localhost,127.0.0.1}
-    no_proxy: ${OPENCLAW_NO_PROXY:-localhost,127.0.0.1}
+    # 代理：容器访问宿主机代理用 host.docker.internal
+    OPENCLAW_HTTP_PROXY=http://host.docker.internal:10808
+    OPENCLAW_HTTPS_PROXY=http://host.docker.internal:10808
+    OPENCLAW_ALL_PROXY=socks5://host.docker.internal:10808
+    OPENCLAW_NO_PROXY=localhost,127.0.0.1
 
 ## 首次会遇到
 - 列出待批准配对的设备：docker compose run --rm openclaw-cli devices list

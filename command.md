@@ -6,6 +6,7 @@
 - 退出当前环境：conda deactivate
 
 ## linux
+- 
 - 查找对应pid：ps aux | grep odoo-ce
 - 启动服务：sudo systemctl start odoo-ce
 - 杀掉进程：sudo kill 4715
