@@ -6,7 +6,12 @@
 - 退出当前环境：conda deactivate
 
 ## linux
-- 
+- 流式查看日志：tail -f /opt/log/xxx.log
+- 查看最进20行日志：tail -n 20 /opt/log/xxx.log
+- 先看20行再实时追踪：tail -n 20 -f /opt/log/xxx.log
+- 查看特定时间之前的日志：ls wxapi.log.*.log | awk -F'[._]' '{ if ($3$4$5 < 20251220) print $0 }'
+- 查看再删除特定时间之前的日志：ls wxapi.log.*.log | awk -F'[._]' '{ if ($3$4$5 < 20251220) print $0 }' | xargs -r rm -f
+- ps -ef | grep java | grep -E '\.jar' | grep -v grep
 - 查找对应pid：ps aux | grep odoo-ce
 - 启动服务：sudo systemctl start odoo-ce
 - 杀掉进程：sudo kill 4715
