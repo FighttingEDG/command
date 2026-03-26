@@ -8,6 +8,8 @@
 ## linux
 - 过滤：grep
 - 排除xxx相关的信息：grep -v xxx
+- 查看一定时间内的日志：grep -e '10:3[0-5]'
+- 查看29和30分这两个时间日志：grep -E '10:2[9]|10:30'
 - 把二进制信息强制当成文本解析：grep -a "error" xxx.log
 - 流式查看：tail
 - 流式查看日志：tail -f /opt/log/xxx.log
@@ -18,6 +20,8 @@
 - 看进程状态：ps
 - 显示所有用户进程：ps aux
 - 查看所有关于java的进程：ps -ef | grep java
+- curl
+- 访问接口：curl http://localhost:9999/api/xre/sys/refresh/233
 - 详细格式列出目录：ll
 - 查看特定时间之前的日志：ls wxapi.log.*.log | awk -F'[._]' '{ if ($3$4$5 < 20251220) print $0 }'
 - 查看再删除特定时间之前的日志：ls wxapi.log.*.log | awk -F'[._]' '{ if ($3$4$5 < 20251220) print $0 }' | xargs -r rm -f
