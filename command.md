@@ -22,6 +22,8 @@
 - 查看所有关于java的进程：ps -ef | grep java
 - curl
 - 访问接口：curl http://localhost:9999/api/xre/sys/refresh/233
+- 开启历史记录：set -o history
+- 关闭历史记录：set +o history
 - 详细格式列出目录：ll
 - 查看特定时间之前的日志：ls wxapi.log.*.log | awk -F'[._]' '{ if ($3$4$5 < 20251220) print $0 }'
 - 查看再删除特定时间之前的日志：ls wxapi.log.*.log | awk -F'[._]' '{ if ($3$4$5 < 20251220) print $0 }' | xargs -r rm -f
