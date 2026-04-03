@@ -20,6 +20,7 @@
 - 看进程状态：ps
 - 显示所有用户进程：ps aux
 - 查看所有关于java的进程：ps -ef | grep java
+- 直接变成超级用户(前提有sudo权限)：sudo -i
 - curl
 - 访问接口：curl http://localhost:9999/api/xre/sys/refresh/233
 - 开启历史记录：set -o history
