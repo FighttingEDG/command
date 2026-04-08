@@ -1,10 +1,3 @@
-## Anaconda
-- 查看所有环境：conda env list
-- 创建conda环境，指定python版本：conda create -n name python=3.11
-- 激活环境：conda activate odoo18
-- 删除对应版本：conda env remove --name odoo18
-- 退出当前环境：conda deactivate
-
 ## linux
 - 过滤：grep
 - 排除xxx相关的信息：grep -v xxx
@@ -46,7 +39,14 @@
       gateway 192.168.3.1
       dns-nameservers 8.8.8.8 8.8.4.4
   ```
-
+## windows命令
+- 查看端口是否被监听：netstat -ano | findstr 6379
+## Anaconda
+- 查看所有环境：conda env list
+- 创建conda环境，指定python版本：conda create -n name python=3.11
+- 激活环境：conda activate odoo18
+- 删除对应版本：conda env remove --name odoo18
+- 退出当前环境：conda deactivate
 ## PostgreSQL / psql
 - 登录：psql -U postgres
 - 连接数据库：psql -U 用户名 -d 数据库名 -W
