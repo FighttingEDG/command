@@ -25,6 +25,7 @@
 - 查看前状态：docker ps
 - 查看当前docker存储占用情况：docker system df
 - 删除打包产生的缓存：docker builder prune
+- docker exec -it thingsboard-postgres-1 psql -U postgres
 
 ## 接入企业微信
 
