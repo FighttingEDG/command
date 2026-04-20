@@ -54,3 +54,11 @@
 ## 首次会遇到
 - 列出待批准配对的设备：docker compose run --rm openclaw-cli devices list
 - 批准某台设备：docker compose run --rm openclaw-cli devices approve <requestId>
+
+## openclaw在macmini上相关命令
+- 进入工作目录：cd /Users/yuhongyang/clawWorkspace/openclaw
+- 重启服务：docker compose restart openclaw-gateway
+- 查看当前状态：docker ps
+- 查看日志：docker logs --tail 200 openclaw-openclaw-gateway-1
+-  docker compose up -d --force-recreate openclaw-gateway
+-  
