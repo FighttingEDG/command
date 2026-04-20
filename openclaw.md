@@ -7,7 +7,8 @@
 - gateway 端口：18789
 - token：508593b26f0225e75d5c4aa43405eda80a26ee4e5046b4c8（需放在 `OPENCLAW_GATEWAY_TOKEN` 环境变量中）
 - OpenRouter Key：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
-
+- 现在配置：
+- "provider": "anthropic","mode": "api_key","api_key": "d8429fb1-1644-491f-ba8b-4952defb3694","base_url": "https://ark.cn-beijing.volces.com/api/coding"
 ### 命令
 - 查看 gateway 状态：openclaw gateway status
 - 启动：openclaw gateway start

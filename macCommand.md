@@ -16,7 +16,8 @@
 - sudo nginx -t && sudo nginx -s reload
 - ubuntu:sudo systemctl restart nginx
 
-## 
+## 远程
+- 远程mac命令：ssh -p 10001 yuhongyang@120.55.112.67
 
 
 ## crmeb问题
