@@ -60,5 +60,5 @@
 - 重启服务：docker compose restart openclaw-gateway
 - 查看当前状态：docker ps
 - 查看日志：docker logs --tail 200 openclaw-openclaw-gateway-1
--  docker compose up -d --force-recreate openclaw-gateway
--  
+- 强制重建容器：docker compose up -d --force-recreate openclaw-gateway
+- 拉取最新版本：docker pull ghcr.io/openclaw/openclaw:latest（不要用，现在是通过git拉取的官方镜像）
