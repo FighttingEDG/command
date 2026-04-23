@@ -19,6 +19,10 @@
 ## 远程
 - 远程mac命令：ssh -p 10001 yuhongyang@120.55.112.67
 
+## 临时修改ip
+- 固定ip：sudo ifconfig en0 192.168.2.222 netmask 255.255.255.0
+- 删除多余的ip：sudo ifconfig en0 -alias 192.168.2.222
+- 自动获取ip：sudo ipconfig set en0 DHCP
 
 ## crmeb问题
 - 长连接：cd /Users/yuhongyang/produc/crmeb/crmeb && sudo rm -f runtime/workerman.pid；sudo launchctl kickstart -k system/com.crmeb.swoole
