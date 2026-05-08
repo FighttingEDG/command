@@ -1,4 +1,5 @@
 ## linux
+- 移动文件：mv /home/ubuntu/UK_SP5---Metering-dev2.zip /opt/
 - 过滤：grep
 - 排除xxx相关的信息：grep -v xxx
 - 查看一定时间内的日志：grep -e '10:3[0-5]'
@@ -39,6 +40,10 @@
       gateway 192.168.3.1
       dns-nameservers 8.8.8.8 8.8.4.4
   ```
+## ubuntu
+- 查看端口监听：sudo ss -tulnp | grep 8000
+- 查看某台服务器的某个端口是否有服务：nc -zv 192.168.33.101 8000
+- 进入root用户：sudo -i
 ## windows命令
 - 查看端口是否被监听：netstat -ano | findstr 6379
 ## Anaconda
