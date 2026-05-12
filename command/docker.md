@@ -1,3 +1,14 @@
+## 常用命令
+- 查看当前镜像：docker images
+- 进入容器：docker exec -it scales-power-web sh
+- 停止并移除(不建议使用)：docker compose down（改了.env环境变量要先移除再启动）
+- 启动网关：docker compose up -d (--force-recreate) openclaw-gateway;--force-recreate强制删除旧容器并创建一个新容器
+- 停止网关：docker compose stop openclaw-gateway
+- 重启网关：docker compose restart openclaw-gateway
+- 查看前状态：docker ps
+- 查看当前docker存储占用情况：docker system df
+- 删除打包产生的缓存：docker builder prune
+- docker exec -it thingsboard-postgres-1 psql -U postgres
 ## docker部署openclaw
 - 先在隔离文件夹(建议用users/xx/下的文件夹)下拉取源码
 - 使用git checkout v2026.3.13-1切换到固定版本
@@ -15,18 +26,6 @@
     - docker compose up → 根据 docker-compose.yml 启动服务。
     - -d → 后台运行（detached mode），终端不会被占用。
     - openclaw-gateway → 要启动的服务名，可以只启动这个服务，不启动 Compose 文件里的其他服务。
-
-## 常用命令
-- 查看当前镜像：docker images
-- 停止并移除(不建议使用)：docker compose down（改了.env环境变量要先移除再启动）
-- 启动网关：docker compose up -d (--force-recreate) openclaw-gateway;--force-recreate强制删除旧容器并创建一个新容器
-- 停止网关：docker compose stop openclaw-gateway
-- 重启网关：docker compose restart openclaw-gateway
-- 查看前状态：docker ps
-- 查看当前docker存储占用情况：docker system df
-- 删除打包产生的缓存：docker builder prune
-- docker exec -it thingsboard-postgres-1 psql -U postgres
-
 ## 接入企业微信
 
 ## 需要修改
