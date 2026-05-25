@@ -1,6 +1,3 @@
-## 当前服务安装方式
-- cliproxyapi：brew install cliproxyapi
-
 ## pyenv
 - python管理工具管理的python版本
 - 安装指定版本：pyenv install 3.11.9

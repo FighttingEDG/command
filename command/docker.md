@@ -9,6 +9,14 @@
 - 查看当前docker存储占用情况：docker system df
 - 删除打包产生的缓存：docker builder prune
 - docker exec -it thingsboard-postgres-1 psql -U postgres
+## docker镜像拉取网络问题解决
+- 只需要在构建的时候传入代理就行了
+```
+    docker compose build \                
+  --build-arg HTTP_PROXY=http://host.docker.internal:10808 \
+  --build-arg HTTPS_PROXY=http://host.docker.internal:10808 \
+  --no-cache --pull
+```
 ## docker部署openclaw
 - 先在隔离文件夹(建议用users/xx/下的文件夹)下拉取源码
 - 使用git checkout v2026.3.13-1切换到固定版本
