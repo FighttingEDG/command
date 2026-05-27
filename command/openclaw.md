@@ -8,5 +8,9 @@
 ## 更新版本
 - git pull拉取最新版本
 - 还需要把.env和docker-compose.yml的镜像改成本地的
-- 强制重新构建：docker compose build --no-cache
+- 强制重新构建：docker compose build --no-cache或者：
+docker compose build \                
+  --build-arg HTTP_PROXY=http://host.docker.internal:10808 \
+  --build-arg HTTPS_PROXY=http://host.docker.internal:10808 \
+  --no-cache --pull
 - 启动：docker compose up -d
