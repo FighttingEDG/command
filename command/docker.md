@@ -9,6 +9,8 @@
 - 查看当前docker存储占用情况：docker system df
 - 删除打包产生的缓存：docker builder prune
 - docker exec -it thingsboard-postgres-1 psql -U postgres
+- docker导出数据库：
+- 大多数重启：docker compose down && docker compose up -d
 ## docker镜像拉取网络问题解决
 - 只需要在构建的时候传入代理就行了
 ```
