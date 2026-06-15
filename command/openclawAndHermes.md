@@ -9,12 +9,13 @@
 ## docker相关命令
 - 大多数重启：docker compose down && docker compose up -d
 - 修改了dockerfile只能强制重新构建再重启：
-    - 
+    - 打包hermes
     ```
         docker compose build --no-cache --pull \
             --build-arg HTTP_PROXY=http://host.docker.internal:10808 \
             --build-arg HTTPS_PROXY=http://host.docker.internal:10808
     ```
+    - 打包openclaw的指令
     ```
         docker compose build \
             --build-arg http_proxy= \
