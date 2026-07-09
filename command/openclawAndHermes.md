@@ -8,6 +8,7 @@
 - dockerfile里面是插件配置文件，特别是hermes的，很重要
 ## docker相关命令
 - 大多数重启：docker compose down && docker compose up -d
+-  清理 build cache:docker buildx prune -f 
 - 修改了dockerfile只能强制重新构建再重启：
     - 打包hermes
     ```
@@ -58,3 +59,6 @@ size=10766713
 
 ## 当前增加以及修改过的东西
 - ！！！后续需要整理一次
+
+
+## 最新进度，6.15，已经重新构建，已经重启
