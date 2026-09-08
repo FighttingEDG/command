@@ -32,3 +32,10 @@ B. 验证不是政府来调你，是 Hub/工具来测你：
 - 联调期：去接一个 Hub（如 Gireve / EcoMovement / Hubject），他们会用自动化套件扫你一遍：推 3 个站、改个价格、刷张卡、起一单、看 Session/CDR 对不对
 - 取证期：过了就是 OCPI 2.2.1 CPO Certified，这张纸就是给英国监管看的合规证明
 - 全部 https + Authorization: Token 通，Hub 扫过去全绿，就结束了。
+
+## 待确定
+- 是不是至少有一个商家接入才能拿证，HUB验收标准
+- HUB 选型与费用：Gireve / EcoMovement / Hubject 三选一，接入周期与年费待确认
+- GB 资质：`country_code=GB` / `party_id` 申请主体（以哪个公司名义）及流程
+- 试点场站：首批用工厂桩还是英国真站，需与运维/场站方确认
+- 资源：`jdy-saas-ocpi-service` (JDK17) 部署在哪台机器，是否需扩容
