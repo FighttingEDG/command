@@ -42,12 +42,12 @@
 
 ## 同局域网使用某台代理
 ```
-    export http_proxy=http://192.168.33.100:10808
-    export https_proxy=http://192.168.33.100:10808
-    export all_proxy=socks5://192.168.33.100:10808
-    export HTTP_PROXY=http://192.168.33.100:10808
-    export HTTPS_PROXY=http://192.168.33.100:10808
-    export ALL_PROXY=socks5://192.168.33.100:10808
+    export http_proxy=http://192.168.33.2:10808
+    export https_proxy=http://192.168.33.2:10808
+    export all_proxy=socks5://192.168.33.2:10808
+    export HTTP_PROXY=http://192.168.33.2:10808
+    export HTTPS_PROXY=http://192.168.33.2:10808
+    export ALL_PROXY=socks5://192.168.33.2:10808
     export no_proxy=localhost,127.0.0.1,192.168.33.0/24
     export NO_PROXY=localhost,127.0.0.1,192.168.33.0/24
 ```
