@@ -9,3 +9,5 @@
 2. 在家（ssh -p 22022 root@113.98.254.74）
 - scp -r -P 22022 /Users/jevonsmac/Desktop/v2power_erp/* root@113.98.254.74:/opt/v2power_erp_v2/
 - ssh -p 22022 root@113.98.254.74 "systemctl restart erp2"
+## 服务器最新密码
+- blcnqwer

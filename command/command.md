@@ -100,3 +100,9 @@
 - 设置 http/https 代理：`export http_proxy=http://127.0.0.1:10808`、`export https_proxy=http://127.0.0.1:10808`
 - 设置全协议代理：`export all_proxy=socks5://127.0.0.1:10808`
 - 大写变量（部分工具用）：`export HTTP_PROXY`、`export HTTPS_PROXY`、`export ALL_PROXY`
+
+## 调试安卓
+- adb pair 手机IP:配对端口
+- 输入手机上显示的配对码   adb connect 手机IP:连接端口
+- 连接端口在无线调试主页面看，不是配对页那个  adb devices  # 看到 device 算成
+- scrcpy

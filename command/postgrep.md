@@ -12,3 +12,9 @@
     ORDER BY pg_total_relation_size(relid) DESC
     LIMIT 20;
 ```
+## brew管理
+- 启动：brew services start postgresql@15
+- 已有账号：
+    - 默认账号：postgres
+    - jevonsmac
+    - 
